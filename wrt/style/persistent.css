@@ -1,0 +1,165 @@
+/*
+ * The CSS file that is always enabled.
+ *
+ * (c) Copyright 2010 Nokia Corporation. All rights reserved.
+ */
+
+html {
+    background-repeat: repeat-x;
+}
+
+body {
+    font-family: "Nokia Sans Regular";
+    color: rgb(0, 0, 0);
+}
+
+.logoSmall {
+    width: 112px;
+    height: 60px;
+    margin: 0 20px;
+    background-image: url("../gfx/logo_112x60.png");
+    z-index: 99999;
+}
+
+#busyIndicatorContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+input {
+    outline: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+legend {
+    font-size: larger;
+}
+
+.bottomSeparator {
+    border-bottom: 2px solid rgb(174, 217, 156); 
+}
+
+#tabsMenu {
+    border-top: 1px solid rgb(200, 200, 200); ;
+}
+
+#betaTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#betaTable .thumbnailTd {
+    text-align: center;
+}
+
+#betaList tr.even {
+}
+
+#betaList tr.odd {
+    background-color: rgb(215, 215, 215);
+}
+            
+#betaList tr td {
+    padding: 5px 0px 5px 0px;
+    border-top: 1px solid grey;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.thumbnailTd img {
+    width: 60px;
+    height: 60px;
+}
+
+#betaOverview {
+    margin: 0 1em;
+}
+
+#betaOverview h2 {
+    text-align: left;
+}
+
+#betaOverview p {
+    text-align: justify;
+}
+
+#btnBack {
+    background-image: url("../gfx/buttons/back.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    z-index: 99999;
+}
+
+#btnExit {
+    background-image: url("../gfx/buttons/exit.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    z-index: 99999;
+}
+
+#btnSearch {
+    background-image: url("../gfx/buttons/search.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 82px;
+    height: 35px;
+    border: 0;
+}
+
+#btnSelect {
+    background-image: url("../gfx/buttons/select.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 202px;
+    height: 35px;
+    border: 0;
+}
+
+#btnUnselect {
+    background-image: url("../gfx/buttons/unselect.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 202px;
+    height: 35px;
+    border: 0;
+}
+
+#btnDownload {
+    background-image: url("../gfx/buttons/download.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 152px;
+    height: 35px;
+    border: 0;
+}
+
+#btnViewReviews {
+    background-image: url("../gfx/buttons/view_reviews.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 152px;
+    height: 35px;
+    border: 0;
+}

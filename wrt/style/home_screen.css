@@ -1,0 +1,61 @@
+/**
+ * The CSS file for the home screen.
+ *
+ * (c) Copyright 2010 Nokia Corporation. All rights reserved.
+ */
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+#topBar {
+    display: none;
+}
+
+#btnExit {
+    display: none;
+}
+
+#tabs {
+    display: none;
+}
+
+#tabsMenu {
+    display: none;
+}
+
+#homeScreenView {
+    background-image: url("../gfx/background_308x85.png");
+    background-repeat: repeat-x;
+    display: block;
+}
+
+#homeScreenLogo {
+    float: right;
+    clear: right;
+    margin-right: 0.2em;
+}
+
+#homeScreenInfo {
+    margin: 0 1em;
+    padding: 1em 1em 1.5em 1em;
+    font-size: larger;
+}
+
+#homeScreenImg {
+    height: 70px;
+    margin: 0.5em 1em;
+}
+
+#homeScreenTitle {
+    vertical-align: middle;
+    width: 130px;
+}
+
+#statusInfo {
+    float: right;
+    margin: 0.2em;
+    width: 28px;
+    height: 28px;
+}

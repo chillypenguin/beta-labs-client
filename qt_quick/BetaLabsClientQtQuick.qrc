@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>script/ajax.js</file>
+        <file>script/common.js</file>
+        <file>gfx/background_360x640.png</file>
+        <file>gfx/close-ad-1.png</file>
+        <file>gfx/close-ad-2.png</file>
+        <file>gfx/close-ad-3.png</file>
+        <file>gfx/close-ad-4.png</file>
+        <file>gfx/close-ad-5.png</file>
+        <file>gfx/close-ad-6.png</file>
+        <file>gfx/close-ad-7.png</file>
+        <file>gfx/close-ad-8.png</file>
+        <file>gfx/close-ad-9.png</file>
+        <file>gfx/ad-placeholder.png</file>
+        <file>gfx/icon.svg</file>
+        <file>gfx/logo_112x60.png</file>
+        <file>gfx/searchbox-bg.png</file>
+        <file>gfx/splash_screen.png</file>
+        <file>gfx/tb-latest.png</file>
+        <file>gfx/tb-latest-inv.png</file>
+        <file>gfx/tb-popular.png</file>
+        <file>gfx/tb-popular-inv.png</file>        
+        <file>gfx/title_application_details.png</file>
+        <file>gfx/title_download_info.png</file>
+        <file>gfx/title_latest_applications.png</file>
+        <file>gfx/title_most_popular_applications.png</file>
+        <file>gfx/title_reviews.png</file>
+        <file>gfx/title_search.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,226 @@
+/**
+ * The CSS file for landscape orientation in NHD resolution.
+ *
+ * (c) Copyright 2010 Nokia Corporation. All rights reserved.
+ */
+
+html {
+    background-image: url("../gfx/background_640x360.png");
+}
+
+#homeScreenView {
+    display: none;
+}
+
+/*********************
+ * Fixed fields: Top *
+ *********************/
+.topFixed {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+/*****************************
+ * Fixed fields: Scroll area *
+ *****************************/
+.scrollArea {
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+}
+
+#scrollableBetaArea, #scrollableDetailsArea, #scrollableDownloadArea, #scrollableReviewArea {
+    left: 0;
+    top: 62px;
+    max-height: 293px;
+}
+
+/************
+ * Tab menu *
+ ************/
+#tabsMenu {
+    position: fixed;
+    left: 186px;
+    top: 5px;
+}
+
+#tabs div#tabSearch, #tabs div#tabLatest, #tabs div#tabMostPopular {
+    position: fixed;
+    top: 110px;
+    height: 100%;
+    width: 100%;
+}
+
+/***************
+ * Search view *
+ ***************/
+#scrollableSearchArea {
+    position: fixed;
+    left: 0;
+    top: 120px;
+    max-height: 238px;
+    margin: 0 1em;
+}
+
+#freeTextArea {
+    position: fixed;
+    left: 15px;
+    top: 65px;
+    word-spacing: -4px;  /* Prevents spaces between background images */
+}
+
+.freeTextLeft {
+    display: inline-block;
+    background: transparent url("../gfx/searchbar_left.png") no-repeat scroll 0 0;
+    height: 62px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.freeTextMiddle {
+    display: inline-block;
+    background: transparent url("../gfx/searchbar_middle.png") repeat-x scroll 0 0;
+    height: 62px;
+    width: 320px;  /* 360 px - 2 * 20px */ 
+    padding: 0;
+    margin: 0;
+}
+
+.freeTextRight {
+    display: inline-block;
+    background: transparent url("../gfx/searchbar_right.png") no-repeat scroll 0 0;
+    height: 62px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#freeText {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: larger;
+}
+
+#btnExit {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+}
+
+#btnBack {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+}
+
+#btnSearch {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+#btnSelect, #btnUnselect {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+#categoryAreaCol1 {
+    float: left;
+    clear: left;
+    margin-top: 70px;
+    width: 52%;
+}
+
+#categoryAreaCol2 {
+    float: left;
+    margin-top: 19px;
+    width: 45%;
+}
+
+/******************
+ * Search results *
+ ******************/
+#betaTable .thumbnailTd img {
+    margin: 0 1em;
+}
+
+/***************
+ * Details view *
+ ***************/
+#noResultsInfo {
+    margin: 1em;
+    text-align: center;
+    font-size: larger;
+}
+
+#betaTitle {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    margin: 0.5em 0;
+    font-size: larger;
+}
+
+#betaImgDiv {
+    width: 150px;
+    margin: 1em 1.5em;
+}
+
+#betaImg {
+    display: block;
+    max-width: 150px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+#btnDownload, #btnDownloadDisabled {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+
+#btnViewReviews {
+    position: absolute;
+    left: 370px;
+    top: 50px;
+}
+
+#betaRating {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    text-align: center;
+}
+
+/**********************
+ * Download info view *
+ **********************/
+#betaDownloadInfo {
+    margin: 0 1em;
+}
+
+#betaDownloadInfo h2 {
+    margin-top: 0;
+    text-align: left;
+}
+
+/****************
+ * Reviews view *
+ ****************/
+#betaReviews {
+    margin: 0 1em;
+}
+
+#betaReviews h2 {
+    margin-top: 0;
+}
+
+.noReviews {
+    font-size: larger;
+}

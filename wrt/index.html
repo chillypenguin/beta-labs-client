@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <!-- Guarana UI style sheets -->
+        <link rel="stylesheet" href="style/themes/nokia/busy.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="style/themes/nokia/base.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="style/themes/nokia/tabs.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="style/themes/nokia/checkbox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="style/themes/nokia/rating.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="style/themes/custom-theme/ui.all.css" type="text/css" media="screen" />
+
+        <link rel="stylesheet" href="style/persistent.css" type="text/css" />
+        <link rel="stylesheet" href="style/nhd_portrait.css" type="text/css"
+            disabled="true" title="NHD Portrait" />
+        <link rel="stylesheet" href="style/nhd_landscape.css" type="text/css"
+            disabled="true" title="NHD Landscape" />
+        <link rel="stylesheet" href="style/home_screen.css" type="text/css"
+            disabled="true" title="Home Screen" />
+
+        <!-- Guarana UI scripts -->
+        <script type="text/javascript" src="lib/jquery/jquery.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/core.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/dom.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/util.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/widget.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/defaults.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/busy.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/optionbox.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/checkbox.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/rating.js" charset="utf-8"></script>
+        <script type="text/javascript" src="lib/guarana/tabs.js" charset="utf-8"></script>
+    
+        <!-- Other scripts -->
+        <script type="text/javascript" src="script/ajax.js" charset="utf-8"></script>
+        <script type="text/javascript" src="script/common.js" charset="utf-8"></script>
+        <script type="text/javascript" src="script/main.js" charset="utf-8"></script>
+        <title>Beta Labs Widget</title>
+    </head>
+    <body>
+        <div id="busyIndicatorContainer"></div>
+        
+        <div id="topBar" class="topFixed bottomSeparator">
+            <div id="logo" class="logoSmall" onclick="logoClicked();"></div>
+            <input id="btnBack" type="button" class="hidden" />
+            <input id="btnExit" type="button" onclick="exit();" />
+        </div>
+        
+        <div id="tabs">
+            <ul id="tabsMenu">
+                <li><a href="#tabLatest" onclick="return false;">Latest</a></li>
+                <li><a href="#tabMostPopular" onclick="return false;">Popular</a></li>
+                <li><a href="#tabSearch" onclick="return false;">Search</a></li>
+            </ul>
+            
+            <div id="tabLatest">
+                <!-- Will contain list of latest widgets -->
+            </div>
+            
+            <div id="tabMostPopular">
+                <!-- Will contain list of most popular widgets -->
+            </div>
+
+            <div id="tabSearch">
+                <!-- Search view -->
+                <div id="searchView" class="view hidden">
+                    <div id="scrollableSearchArea" class="scrollArea">
+                        <div id="freeTextArea">
+                            <div class="freeTextLeft"></div><div class="freeTextMiddle">
+                                <input type="text" id="freeText" value="Free text search" onfocus="clearText();" />
+                                <input id="btnSearch" type="button" onclick="buttonClicked('search');" />
+                            </div><div class="freeTextRight"></div>
+                        </div>
+                        
+                        <input id="btnSelect" type="button" onclick="checkBoxes();" />
+                        <input id="btnUnselect" type="button" onclick="uncheckBoxes();" class="hidden" />
+                
+                        <div id="categoryAreaCol1"></div>
+                        <div id="categoryAreaCol2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beta view -->
+        <div id="betaView" class="view hidden">
+            <div id="scrollableBetaArea" class="scrollArea">
+                <p id="noResultsInfo" class="hidden">No search results found matching your search criteria.</p>
+                <table id="betaTable" class="itemList">
+                    <tbody id="betaList">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Details view -->
+        <div id="detailsView" class="view hidden">
+            <div id="scrollableDetailsArea" class="scrollArea">
+                <h2 id="betaTitle"></h2>
+                <div id="betaImgDiv">
+                    <img id="betaImg" src="" alt="" />
+                </div>
+                <input id="btnDownload" type="button" onclick="buttonClicked('download');" />
+                <img id="btnDownloadDisabled" src="gfx/buttons/download_disabled.png"
+                    alt="Downloading not possible" class="hidden" />
+                <input id="btnViewReviews" type="button" onclick="fetchReviews();" />
+                <div id="betaRating"></div>
+                <div id="betaOverview"></div>
+            </div>
+        </div>
+        
+        <!-- Download info view -->
+        <div id="downloadInfoView" class="view hidden">
+            <div id="scrollableDownloadArea" class="scrollArea">
+                <div id="betaDownloadInfo"></div>
+            </div>
+        </div>
+        
+        <!-- Review view -->
+        <div id="reviewView" class="view hidden">
+            <div id="scrollableReviewArea" class="scrollArea">
+                <div id="betaReviews"></div>
+            </div>
+        </div>
+        
+        <!-- Home screen view -->
+        <div id="homeScreenView" class="view hidden">
+            <img id="statusInfo" />
+            <img id="homeScreenLogo" src="gfx/logo_80x43.png" alt="BetaLabsWidget" />
+            <p id="homeScreenInfo" class="hidden">No latest applications available</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img id="homeScreenImg" src="" /></td>
+                        <td id="homeScreenTitle"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+.nokia-busy-overflow, .nokia-busy-loader, .nokia-busy-text-loader {
+    position: absolute;
+}
+
+.nokia-busy-loader {
+    z-index: 500;
+    background: url(images/busyindicator.gif) no-repeat;
+}
+
+.nokia-busy-text-loader {
+    font-size: 18px;
+    text-align: center;
+    display: table;
+}
+
+.nokia-busy-text-loader > div {
+    display: table-cell;
+    vertical-align: middle;
+}
