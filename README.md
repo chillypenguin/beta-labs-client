@@ -3,7 +3,7 @@ Beta labs client
 
 A Nokia Developer example application, implemented with Qt Quick, that allows users to browse the applications in [Nokia Beta Labs](http://betalabs.nokia.com/).
 
-Developed with [Qt Quick Components](http://doc.qt.nokia.com/qt-components-symbian-1.1/index.html), this example shows [[How to use of In-App Advertising API]] and how to elegantly integrate ads to your application. 
+Developed with [Qt Quick Components](http://doc.qt.nokia.com/qt-components-symbian-1.1/index.html), this example shows [[How to use the In-App Advertising API]] and how to elegantly integrate ads to your application. 
 
 [[Image(wiki:WikiStart:blc2-latest-page.png, 200px)]]
 [[Image(wiki:WikiStart:blc2-details-page.png, 200px)]]
