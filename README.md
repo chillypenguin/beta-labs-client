@@ -11,9 +11,9 @@ this example shows
 [How to use the In App Advertising API](https://github.com/nokia-developer/beta-labs-client/wiki/How-to-use-the-In-App-Advertising-API)
 and how to elegantly integrate ads to your application. 
 
-![Latest page](https://raw.github.com/nokia-developer/beta-labs-client/master/doc/screenshots/blc2-latest-page.png)&nbsp;
-![Details page](https://raw.github.com/nokia-developer/beta-labs-client/master/doc/screenshots/blc2-details-page.png)&nbsp;
-![Search page with ad](https://raw.github.com/nokia-developer/beta-labs-client/master/doc/screenshots/blc2-search-page-with-ad.png)
+![Latest page](https://raw.github.com/nokia-developer/beta-labs-client/master/doc/screenshots/blc2-latest-page_small.png)&nbsp;
+![Details page](https://raw.github.com/nokia-developer/beta-labs-client/master/doc/screenshots/blc2-details-page_small.png)&nbsp;
+![Search page with ad](https://raw.github.com/nokia-developer/beta-labs-client/master/doc/screenshots/blc2-search-page-with-ad_small.png)
 
 ### Compatibility 
 
