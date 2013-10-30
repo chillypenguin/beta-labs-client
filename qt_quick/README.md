@@ -9,8 +9,8 @@ in-app advertising.
 
 The application is compatible with Symbian devices.
 
-This example application is hosted in Nokia Developer Projects:
-- http://projects.developer.nokia.com/betalabsclient
+This example application is hosted in GitHub:
+https://github.com/nokia-developer/beta-labs-client
 
 This example application demonstrates:
 - Communicating with a web server from QML using AJAX
@@ -19,16 +19,14 @@ This example application demonstrates:
 - Utilising in-app advertising using Inneractive's ad SDK
 
 For more information on the implementation and porting, visit the wiki pages:
-- http://projects.developer.nokia.com/betalabsclient/wiki
-- http://projects.developer.nokia.com/betalabsclient/wiki/iaad
-- http://projects.developer.nokia.com/betalabsclient/wiki/PortingConsiderations
+https://github.com/nokia-developer/beta-labs-client
 
 What's new in 2.0
 ------------------
 
  - In-app advertising using QML API by Inneractive
    - Documentation about the implementation can be found here:
-     http://projects.developer.nokia.com/betalabsclient/wiki/iaad
+     https://github.com/nokia-developer/beta-labs-client/wiki/How-to-use-the-In-App-Advertising-API
 
 
 1. Usage
@@ -224,9 +222,7 @@ Qt Quick Components 1.1 or higher is required.
 
 You can install and run the application on the device by using the Qt SDK.
 Open the project in the SDK, set up the correct target (depending on the device
-platform), and click the Run button. For more details about this approach,
-please visit the Qt Getting Started at Nokia Developer
-(http://www.developer.nokia.com/Develop/Qt/Getting_started/).
+platform), and click the Run button.
 
 5.3 Symbian device
 ------------------
@@ -246,7 +242,7 @@ application menu and launch the application by tapping the icon.
 
 See the license text file delivered with this project. The license file is also
 available online at
-http://projects.developer.nokia.com/betalabsclient/browser/qt_quick/trunk/Licence.txt
+https://github.com/nokia-developer/beta-labs-client/blob/master/qt_quick/Licence.txt
 
 
 7. Related documentation
@@ -254,9 +250,6 @@ http://projects.developer.nokia.com/betalabsclient/browser/qt_quick/trunk/Licenc
 
 Qt Quick Components
 - http://doc.qt.nokia.com/qtquick-components-symbian-1.1/index.html
-
-In-app advertising
-- http://www.developer.nokia.com/Distribute/In-app_advertising/
 
 
 8. Version history
