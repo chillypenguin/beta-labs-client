@@ -1,10 +1,7 @@
-beta-labs-client
+Beta labs client
 ================
 
-A Nokia Developer example application, implemented with Qt Quick, that allows users to browse the applications in Nokia
-
-
-This is a Nokia example application that acts as a client for the [Nokia Beta Labs](http://betalabs.nokia.com/).
+A Nokia Developer example application, implemented with Qt Quick, that allows users to browse the applications in [Nokia Beta Labs](http://betalabs.nokia.com/).
 
 Developed with [Qt Quick Components](http://doc.qt.nokia.com/qt-components-symbian-1.1/index.html), this example shows [[How to use of In-App Advertising API]] and how to elegantly integrate ads to your application. 
 
