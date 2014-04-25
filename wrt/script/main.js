@@ -1,7 +1,7 @@
 /**
  * The main JavaScript file.
  *
- * (c) Copyright 2010 Nokia Corporation. All rights reserved.
+ * (c) Copyright (c) 2010-2014 Microsoft Mobile. All rights reserved.
  */
 
 var BETA_LABS_URL = "http://betalabs.nokia.com";

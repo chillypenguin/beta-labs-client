@@ -1,7 +1,7 @@
 /**
  * Utility functions.
  *
- * (c) Copyright 2009 Nokia Corporation. All rights reserved.
+ * (c) Copyright (c) 2009-2014 Microsoft Mobile. All rights reserved.
  */
 
 // Sets the active stylesheet for the HTML document according to the specified

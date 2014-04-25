@@ -1,7 +1,7 @@
 /**
  * AJAX-related functions.
  *
- * (c) Copyright 2009 Nokia Corporation. All rights reserved.
+ * (c) Copyright (c) 2009-2014 Microsoft Mobile. All rights reserved.
  */
 
 // Creates an XMLHttpRequest object

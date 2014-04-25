@@ -1,7 +1,7 @@
 /**
  * Utility functions. Common to all QML files.
  *
- * (c) Copyright 2011 Nokia Corporation. All rights reserved.
+ * (c) Copyright (c) 2011-2014 Microsoft Mobile. All rights reserved.
  */
 
 var BETA_LABS_URL = "http://betalabs.nokia.com";
